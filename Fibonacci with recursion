@@ -1,0 +1,28 @@
+#include <stdio.h>
+void printfibonacci(int n)
+{
+    int static n1, n2, n3;
+    printf("ENTER N1: ");
+    scanf("%d", &n1);
+    printf("ENTER N2: ");
+    scanf("%d", &n2);
+    
+    while(n>0) 
+    {
+        n3 = n1 + n2;
+        n1 = n2;
+        n2 = n3;
+        printf("%d\t", n3);
+        n--;
+    }
+}
+int main(){
+    int n;
+    printf("ENTER THE FIBONACCI'S NUMBER: ");
+    scanf("%d",&n);
+
+    
+    printfibonacci(n);
+    return 0; 
+    
+}
